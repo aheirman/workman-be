@@ -1,0 +1,73 @@
+// Workman-BE Keyboard Layout symbols for xkb on X.Org Server 7.x
+// 19-10-2021 Aron Heirman
+
+partial alphanumeric_keys
+xkb_symbols "workman-be" {
+
+    name[Group1]= "Belgian (Workman-be)";
+
+    include "latin"
+
+    // Alphanumeric section
+    key <AE01>	{ [ ampersand,          1,          bar,   exclamdown ]	};
+    key <AE02>	{ [    eacute,          2,           at,    oneeighth ]	};
+    key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
+    key <AE04>	{ [apostrophe,          4,   onequarter,       dollar ]	};
+    key <AE05>	{ [ parenleft,          5,      onehalf, threeeighths ]	};
+    key <AE06>	{ [   section,          6,  asciicircum,  fiveeighths ]	};
+    key <AE07>	{ [    egrave,          7,    braceleft, seveneighths ]	};
+    key <AE08>	{ [    exclam,          8,  bracketleft,    trademark ]	};
+    key <AE09>	{ [  ccedilla,          9,    braceleft,    plusminus ]	};
+    key <AE10>	{ [    agrave,          0,   braceright,       degree ]	};
+    key <AE11>	{ [parenright,     degree,    backslash, questiondown ]	};
+    key <AE12>	{ [     minus, underscore, dead_cedilla,  dead_ogonek ]	};
+
+    key <AD01> {  [         q,          Q,           ae,           AE ] };
+    key <AD02> {  [   d,  D   ] };
+    key <AD03> {  [   r,  R   ] };
+    key <AD04> {  [         w,          W, guillemotleft,       U2039 ] };
+    key <AD05> {  [   b,  B   ] };
+    key <AD06> {  [   j,  J   ] };
+    key <AD07> {  [   f,  F   ] };
+    key <AD08> {  [   u,  U,        udiaeresis,      Udiaeresis   ] };
+    key <AD09> {  [   p,  P   ] };
+    key <AD10> {  [                l,                L,                    l,                     L ] };
+
+    key <AC01> {  [         a,          A,           at,  Greek_OMEGA ] };
+    key <AC02> {  [   s,  S,        ssharp,      U1E9E   ] };
+    key <AC03> {  [   h,  H   ] };
+    key <AC04> {  [   t,  T   ] };
+    key <AC05> {  [   g,  G   ] };
+    key <AC06> {  [   y,  Y   ] };
+    key <AC07> {  [   n,  N   ] };
+    key <AC08> {  [         e,          E,     EuroSign,         cent ] };
+    key <AC09> {  [         o,          O,           oe,           OE ] };
+    key <AC10> {  [   i,  I   ] };
+
+    key <AB01> {  [         z,          Z,        U017F,      section ] };
+    key <AB02> {  [   x,  X   ] };
+    key <AB03> {  [         m,          M,   dead_acute, dead_doubleacute ] };
+    key <AB04> {  [   c,  C   ] };
+    key <AB05> {  [   v,  V   ] };
+    key <AB06> {  [   k,  K   ] };
+    key <AB07> {  [   l,  L   ] };
+    // End alphanumeric section
+
+
+    key <AD11>	{ [dead_circumflex, dead_diaeresis,  bracketleft, dead_abovering ] };
+    key <AD12>	{ [    dollar,   asterisk, bracketright,  dead_macron ]	};
+    
+    key <AC11>	{ [    ugrave,    percent,   dead_acute,   dead_caron ]	};
+
+    key <AB07>	{ [     comma,   question, dead_cedilla,    masculine ]	};
+    key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
+    key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
+    key <AB10>	{ [     equal,       plus,   dead_tilde, dead_abovedot]	};
+
+    key <LSGT>  { [      less,    greater,    backslash,    backslash ]	};
+    key <BKSL>	{ [        mu,   sterling,   dead_grave,   dead_breve ]	};
+    key <TLDE>	{ [twosuperior, threesuperior,  notsign,      notsign ]	};
+    key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
+
+    include "level3(ralt_switch)"
+};
